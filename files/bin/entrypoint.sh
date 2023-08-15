@@ -9,7 +9,7 @@ fi
 
 if [ "$GROUPER_STARTQS" = "y" ] || [ "$1" = "startqs" ]; then
   echo "Starting up HSQL database with quickstart data"
-  java -cp /opt/grouper.apiBinary-2.2.2/lib/jdbcSamples/hsqldb.jar org.hsqldb.Server -database.0 file:/opt/grouper.apiBinary-2.2.2/grouper -dbname.0 grouper -port 9001 &
+  java -cp /opt/grouper.apiBinary-2.3.0/lib/jdbcSamples/hsqldb.jar org.hsqldb.Server -database.0 file:/opt/grouper.apiBinary-2.3.0/grouper -dbname.0 grouper -port 9001 &
 fi
 
 # Run the `command:`, `CMD`, or command-line command
